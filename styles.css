@@ -1,0 +1,492 @@
+/* =============================================
+   QuoteFlow — Privacy Policy Stylesheet
+   Built on Bootstrap 5 — Custom Overrides Only
+   Font: Outfit (display) + Inter (body)
+   ============================================= */
+
+/* === CSS Variables === */
+:root {
+  --color-bg:           #ffffff;
+  --color-surface:      #f8fafc;
+  --color-border:       #e2e8f0;
+  --color-text:         #0f172a;
+  --color-text-muted:   #475569;
+  --color-text-light:   #94a3b8;
+  --color-primary:      #6366f1;
+  --color-primary-soft: #f1f2ff;
+  --color-green-bg:     #f0fdf4;
+  --color-green-border: #bbf7d0;
+  --color-green-text:   #166534;
+  --color-blue-bg:      #eff6ff;
+  --color-blue-border:  #bfdbfe;
+  --color-blue-text:    #1e40af;
+
+  --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body:    'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.08), 0 1px 2px -1px rgb(0 0 0 / 0.08);
+  --shadow-md: 0 4px 12px -1px rgb(0 0 0 / 0.12), 0 2px 6px -2px rgb(0 0 0 / 0.08);
+}
+
+/* === Base === */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden !important;
+  position: relative;
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+* {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  overflow-wrap: break-word !important;
+}
+
+/* === Header === */
+.site-header {
+  padding: 1rem 0;
+  background-color: rgba(255, 255, 255, 0.92);
+  border-bottom: 1px solid var(--color-border);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  z-index: 1030;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.brand-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.brand-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.brand-name {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  word-break: break-word;
+}
+
+/* === Hero === */
+.hero {
+  padding: 4rem 0 3rem;
+  background: linear-gradient(to bottom, #f1f5f9 0%, #ffffff 100%);
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 8vw, 4rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+
+.hero-meta {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  margin-bottom: 0;
+}
+
+/* === Policy Layout === */
+.policy-content {
+  padding: 3.5rem 0 5rem;
+}
+
+/* === Table of Contents === */
+.toc-box {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  position: sticky;
+  top: 80px;
+}
+
+/* On mobile, remove sticky so it flows naturally */
+@media (max-width: 991.98px) {
+  .toc-box {
+    position: static;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.toc-heading {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-light);
+  margin-bottom: 1rem;
+}
+
+.toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toc-list li {
+  margin-bottom: 0.2rem;
+  min-width: 0;
+}
+
+.toc-list a {
+  display: block;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  padding: 0.4rem 0.75rem;
+  border-left: 2px solid transparent;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  transition: all 0.2s ease;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.toc-list a:hover,
+.toc-list a.active {
+  color: var(--color-primary);
+  background: var(--color-primary-soft);
+  border-left-color: var(--color-primary);
+}
+
+/* On mobile, show TOC as 2-column grid */
+@media (max-width: 991.98px) {
+  .toc-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.4rem;
+  }
+
+  .toc-list a {
+    border-left: none;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    text-align: center;
+    padding: 0.5rem 0.4rem;
+    font-size: 0.8125rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* On very small screens, 1 column for TOC */
+@media (max-width: 400px) {
+  .toc-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* === Policy Sections === */
+.policy-section {
+  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.policy-section:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.375rem, 4vw, 1.75rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.section-title::before {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 22px;
+  background: var(--color-primary);
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.policy-section p {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  line-height: 1.75;
+  margin-bottom: 1.125rem;
+}
+
+/* === Policy List === */
+.policy-list {
+  padding-left: 1.25rem;
+  margin: 0.5rem 0 1.125rem;
+}
+
+.policy-list li {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+  padding-left: 0.25rem;
+}
+
+/* === Highlight Boxes === */
+.highlight-box {
+  border-radius: var(--radius-md);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid;
+  box-shadow: var(--shadow-sm);
+}
+
+.highlight-box--green {
+  background: var(--color-green-bg);
+  border-color: var(--color-green-border);
+}
+
+.highlight-box--green .highlight-text {
+  color: var(--color-green-text);
+}
+
+.highlight-box--blue {
+  background: var(--color-blue-bg);
+  border-color: var(--color-blue-border);
+}
+
+.highlight-box--blue .highlight-text {
+  color: var(--color-blue-text);
+}
+
+.highlight-text {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+/* === App Permission List === */
+.permission-entry {
+  display: flex;
+  gap: 1.25rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.permission-entry:hover {
+  border-color: var(--color-primary);
+}
+
+.p-icon {
+  width: 48px;
+  height: 48px;
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.p-content {
+  flex: 1;
+}
+
+.p-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 0.5rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.p-name {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.p-tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.6rem;
+  border-radius: 4px;
+}
+
+.p-tag--required {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.p-tag--optional {
+  background: #f1f5f9;
+  color: #475569;
+}
+
+.p-desc {
+  font-size: 0.9375rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* stack permission entry on tiny screens */
+@media (max-width: 640px) {
+  .permission-entry {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+  
+  .p-header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .p-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 1.125rem;
+    border-radius: 8px;
+  }
+}
+
+/* === Contact Card === */
+.contact-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin: 1.5rem 0;
+  box-shadow: var(--shadow-sm);
+}
+
+.contact-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.contact-row:last-child {
+  border-bottom: none;
+}
+
+.contact-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-light);
+  min-width: 72px;
+  padding-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+.contact-link {
+  font-size: 0.9375rem;
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+  word-break: break-all;
+  transition: opacity 0.2s;
+}
+
+/* === Footer === */
+.site-footer {
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  padding: 2.5rem 0;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* === Mobile Layout Hardening === */
+@media (max-width: 576px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: clip !important;
+  }
+  
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+  }
+}
