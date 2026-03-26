@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="QuoteFlow Privacy Policy — We prioritize your privacy by using aggregated and non-personal data to improve your experience. Learn how our motivational quotes app handles your data." />
+  <meta name="description" content="QuoteFlow Privacy Policy — Learn exactly what data our motivational quotes app collects, how we use device identifiers for analytics and future advertising, and how your local data is protected." />
   <meta name="robots" content="index, follow" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Privacy Policy — QuoteFlow" />
-  <meta property="og:description" content="QuoteFlow is built with privacy in mind. We use non-personal analytics and crash reports to ensure a seamless experience for you." />
+  <meta property="og:description" content="QuoteFlow is transparent about the data it collects. Read how device identifiers are used for analytics, crash reporting, and future ad features — and how your local data stays on your device." />
   <meta property="og:image" content="https://quoteflow.app/og-privacy-image.jpg" />
 
   <title>Privacy Policy — QuoteFlow</title>
@@ -81,45 +81,53 @@
 
             <section id="introduction" class="policy-section">
               <h2 class="section-title">1. Introduction</h2>
-              <p>Welcome to <strong>QuoteFlow</strong>, a motivational quotes app designed to inspire you every day. This Privacy Policy describes how QuoteFlow ("we," "our," or "the app") handles information when you use our Android application.</p>
-              <p>QuoteFlow is developed and maintained by Suresh Peddimsetti.</p>
-              <p>This privacy policy reflects the data handling practices described in the Google Play Data Safety section.</p>
-              <p>We have designed QuoteFlow with privacy as a core principle. The app does not require you to create an account and does not ask for your name or email address. We use aggregated and non-personal data through analytics and crash reports to improve the app's performance and content for all users. This data is not used to identify individual users. By using the app, you acknowledge the data handling practices described in this policy. This Privacy Policy is publicly accessible and available within the app and on the Google Play Store listing.</p>
+              <p>Welcome to <strong>QuoteFlow</strong>, a motivational quotes app designed to inspire you every day. This Privacy Policy explains what data QuoteFlow ("we," "our," or "the app") collects, why we collect it, and how we use it when you install and use our Android application.</p>
+              <p>QuoteFlow is developed and maintained by <strong>Suresh Peddimsetti</strong>. This policy is consistent with the information declared in the <strong>Google Play Data Safety</strong> section for QuoteFlow.</p>
+              <p>QuoteFlow does <strong>not</strong> require you to create an account and does not ask for your name, email address, or any other directly identifying information. However, like most modern Android apps that use analytics and diagnostic services, we do collect certain <strong>device identifiers and usage data</strong> as described in detail below. By using QuoteFlow, you acknowledge and agree to the data practices described in this Privacy Policy. This policy is publicly accessible within the app and on the Google Play Store listing.</p>
+              <p>This app is intended for users aged <strong>13 and older</strong>.</p>
             </section>
 
             <section id="information-collection" class="policy-section">
               <h2 class="section-title">2. Information Collection and Use</h2>
               <div class="highlight-box highlight-box--green">
-                <p class="highlight-text mb-0"><strong>QuoteFlow is built on a privacy-first foundation. We do not collect personal identifiers like your name, email, or phone number.</strong></p>
+                <p class="highlight-text mb-0"><strong>QuoteFlow does not collect personal identifiers such as your name, email address, or phone number. However, we do collect certain device identifiers and usage data as required by our analytics and crash reporting infrastructure — this is fully disclosed below.</strong></p>
               </div>
-              <p>To ensure a stable and high-quality experience, we collect <strong>aggregated and non-personal data that is not used to identify individual users</strong> through third-party services. This data is used solely for analytics and app functionality purposes.</p>
-              <p><strong>We do not use this data for advertising purposes and we do not sell or share user data with third parties.</strong></p>
-              
-              <p>The categories of data collected include:</p>
+
+              <h3 class="subsection-title">2a. Device Identifiers Collected</h3>
+              <p>To power our analytics and crash reporting services (Firebase), we collect the following device identifiers:</p>
               <ul class="policy-list">
-                <li><strong>Device Information:</strong> Operating system version, device model, and technical hardware details.</li>
-                <li><strong>Device Identifiers:</strong> An app-instance ID and, where available, the Android Advertising ID (ADID), used by Firebase Analytics to distinguish unique app installations. This identifier is not used for advertising purposes.</li>
-                <li><strong>App Activity:</strong> Non-personal usage events, such as screen views and feature interactions (e.g., categories opened).</li>
-                <li><strong>Diagnostics:</strong> Crash logs and performance metrics to help us fix bugs and prevent technical errors.</li>
+                <li><strong>Android Advertising ID (AD_ID):</strong> A resettable device-level identifier assigned by Android. We collect this identifier for analytics segmentation, to measure unique app installations, and to manage frequency capping for future ad integrations. Users may reset this ID or opt out of personalization at any time via <em>Android Settings &gt; Privacy &gt; Ads</em>.</li>
+                <li><strong>App-Instance ID:</strong> A Firebase-generated identifier tied to a specific installation of QuoteFlow on your device. This is used to distinguish unique users in aggregate analytics reports and is reset if you uninstall and reinstall the app.</li>
+              </ul>
+              <p>While the app does <strong>not currently display advertisements</strong>, we collect the AD_ID in preparation for a future ad-supported tier powered by <strong>future third-party advertising partners</strong>. When those features go live, this identifier will be used to serve relevant ads and manage frequency capping. This collection is disclosed now in accordance with Google Play's AD_ID policy.</p>
+
+              <h3 class="subsection-title">2b. App Usage &amp; Diagnostics</h3>
+              <ul class="policy-list">
+                <li><strong>Device Information:</strong> Operating system version, device model, and technical hardware details collected by Firebase.</li>
+                <li><strong>App Activity:</strong> Usage events such as screen views and feature interactions (e.g., categories opened, quotes viewed). This data is aggregated and is not linked to a personally identifiable profile.</li>
+                <li><strong>Crash &amp; Performance Diagnostics:</strong> Crash logs, stack traces, and performance metrics collected via Firebase Crashlytics to help us identify and fix bugs quickly.</li>
               </ul>
 
-              <p>Your saved favorite quotes are stored <strong>locally on your device only</strong> using Android's built-in storage. This data never leaves your device and is not accessible to us or any third parties.</p>
+              <h3 class="subsection-title">2c. Locally Stored Data (Never Transmitted)</h3>
+              <p>To provide a fast, offline-ready experience, QuoteFlow downloads a <strong>compressed quote data file</strong> from our servers on first launch. This file is extracted and stored locally on your device. All subsequent quote browsing reads from this local copy — no network request is made each time you browse quotes.</p>
+              <p>Your <strong>saved favorite quotes</strong> are also stored exclusively on your device using Android's built-in storage. This data never leaves your device and is never accessible to us or any third party.</p>
             </section>
 
             <section id="permissions" class="policy-section">
-              <h2 class="section-title">3. App Permissions & Usage</h2>
-              <p>To provide core app functionality, QuoteFlow requests specific permissions from your device. Each permission is used solely to provide features you explicitly interact with, following Google Play's <strong>Limited Use</strong> policies.</p>
-              
+              <h2 class="section-title">3. App Permissions &amp; Usage</h2>
+              <p>To provide core app functionality, QuoteFlow requests the following permissions from your device. Each permission is used strictly for its stated purpose in compliance with Google Play's <strong>Limited Use</strong> policies.</p>
+
               <div class="permission-entry">
                 <div class="p-icon" aria-hidden="true">🌐</div>
                 <div class="p-content">
                   <div class="p-header">
-                    <h3 class="p-name">Internet Access</h3>
+                    <h3 class="p-name">Network Access (Internet)</h3>
                     <span class="p-tag p-tag--required">Required</span>
                   </div>
-                  <p class="p-desc">Used to fetch quote content and ensure the secure transmission of analytics and crash data. This data is non-personal and is used to improve the app's technical stability and performance.</p>
+                  <p class="p-desc">Used for two purposes: (1) to download the compressed quote data file from our servers on first launch, enabling fully offline reading thereafter; and (2) to securely transmit encrypted diagnostic data (analytics events and crash reports) to Firebase. No personally identifiable information is included in these transmissions.</p>
                 </div>
               </div>
+
 
               <div class="permission-entry">
                 <div class="p-icon" aria-hidden="true">🔔</div>
@@ -128,24 +136,37 @@
                     <h3 class="p-name">Post Notifications</h3>
                     <span class="p-tag p-tag--optional">Optional</span>
                   </div>
-                  <p class="p-desc">Used solely to deliver daily motivational reminders (opt-in only). Reminders are scheduled locally on-device at a user-defined frequency and can be disabled anytime in Settings. No notification analytics or open rates are tracked or transmitted.</p>
+                  <p class="p-desc">Used strictly to deliver opt-in daily motivational reminders. Reminders are scheduled entirely on-device at a user-defined time and frequency, and can be disabled at any time in Android Settings or within the app. No notification open rates or interaction data are tracked or transmitted.</p>
                 </div>
               </div>
 
-              <p class="mt-4">No other sensitive permissions are requested. QuoteFlow has been built to function with the <strong>minimum necessary level of access</strong> to your device.</p>
+              <p class="mt-4">No other sensitive permissions are requested. QuoteFlow is engineered to operate with the <strong>minimum necessary level of device access</strong>.</p>
             </section>
 
             <section id="third-party" class="policy-section">
               <h2 class="section-title">4. Third-Party Services</h2>
               <div class="highlight-box highlight-box--blue">
-                <p class="highlight-text mb-0"><strong>We use industry-standard services from Google to monitor app performance and improve your experience. These services collect only non-personal technical identifiers as described in Section 2.</strong></p>
+                <p class="highlight-text mb-0"><strong>QuoteFlow integrates the following third-party SDKs and services. Each service's data collection practices are governed by their own privacy policies, which we link to below for full transparency.</strong></p>
               </div>
-              <p>QuoteFlow integrates the following services provided by Google LLC:</p>
+
+              <h3 class="subsection-title">Currently Active Services</h3>
               <ul class="policy-list">
-                <li><strong>Firebase Analytics:</strong> Helps us understand how the app is used so we can improve content and features. All data is aggregated and non-personal, and is not used to identify individual users.</li>
-                <li><strong>Firebase Crashlytics:</strong> Provides crash reports that help us identify and fix bugs promptly.</li>
+                <li>
+                  <strong>Google Analytics for Firebase (Google LLC):</strong> Used to collect aggregated app usage data — including app-instance IDs, AD_ID (where available), screen views, and feature interactions — to help us understand how QuoteFlow is used and to guide improvements. Data is processed and stored by Google and may reside in any country where Google operates data centers. <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google Privacy Policy</a>.
+                </li>
+                <li>
+                  <strong>Firebase Crashlytics (Google LLC):</strong> Used to collect crash reports, stack traces, and device state information at the time of a crash. This data is used solely to identify and resolve bugs and improve app stability. <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer" target="_blank">Firebase Privacy &amp; Security</a>.
+                </li>
               </ul>
-              <p><strong>Data collected through Firebase services is processed and stored by Google in accordance with their privacy policies.</strong> Firebase data may be processed and stored in any country where Google operates data centers. These services may collect technical identifiers used for service-level diagnostics in a non-identifying way. For more information, please visit <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google's Privacy Policy</a>.</p>
+
+              <h3 class="subsection-title">Future Integration (Disclosed in Advance)</h3>
+              <ul class="policy-list">
+                <li>
+                  <strong>Third-Party Advertising Partners — Planned:</strong> A future version of QuoteFlow may include an ad-supported tier. When this feature is enabled, we will integrate one or more third-party advertising SDKs that will use the Android Advertising ID (AD_ID) to serve relevant ads and manage frequency capping. The specific ad networks and links to their respective privacy policies will be listed in this section once those integrations are live in the app. We are disclosing this intent now to ensure full transparency in our Google Play Data Safety declaration.
+                </li>
+              </ul>
+
+              <p>We do not sell your data to any third party. Data shared with the above services is used only for the stated operational and analytical purposes.</p>
             </section>
 
             <section id="childrens-privacy" class="policy-section">
@@ -161,9 +182,17 @@
             </section>
 
             <section id="data-security" class="policy-section">
-              <h2 class="section-title">7. Data Security</h2>
-              <p>We take the security of your information seriously. Any technical data transmitted to our service providers (Google Firebase) is protected using industry-standard encryption (TLS/SSL). Your locally saved data is protected by your device's operating system security features.</p>
-              <p>Since we do not collect personal identifiers such as names or email addresses, we are unable to fulfill individual data deletion requests for analytics data. You may reset your app's analytics identifier by clearing the app's data in your device settings under Apps > QuoteFlow > Clear Data.</p>
+              <h2 class="section-title">7. Data Security &amp; Data Deletion</h2>
+              <p>We take the security of your information seriously. <strong>All data transmitted to third-party service providers (including Firebase and any future advertising partners) is encrypted in transit using industry-standard TLS/SSL protocols.</strong> Locally stored data — including your offline quote database and saved favorites — is protected by Android's built-in application sandbox and your device's operating system security features.</p>
+
+              <h3 class="subsection-title">Data Deletion</h3>
+              <p>Because QuoteFlow does <strong>not</strong> use user accounts and does not collect direct personal identifiers (such as names or email addresses), we have no way to isolate and delete the analytics records of a specific individual upon request. This is consistent with how Firebase Analytics and Crashlytics operate with anonymous device-level identifiers.</p>
+              <p>However, you have full control over your data through the following actions:</p>
+              <ul class="policy-list">
+                <li><strong>Reset your Analytics ID &amp; Delete Local Data:</strong> Go to <em>Android Settings &gt; Apps &gt; QuoteFlow &gt; Storage &gt; Clear Data</em>. This will permanently delete all locally stored quotes, favorites, and app preferences, and will cause Firebase to generate a new app-instance ID on next launch.</li>
+                <li><strong>Reset your Android Advertising ID (AD_ID):</strong> Go to <em>Android Settings &gt; Privacy &gt; Ads &gt; Reset Advertising ID</em> (exact path may vary by Android version). This resets the AD_ID across all apps on your device.</li>
+                <li><strong>Opt out of Ads Personalization:</strong> Go to <em>Android Settings &gt; Privacy &gt; Ads &gt; Opt out of Ads Personalization</em> to instruct all apps on your device, including QuoteFlow, not to use your AD_ID for personalized advertising.</li>
+              </ul>
             </section>
 
             <section id="contact" class="policy-section">
