@@ -48,7 +48,7 @@
     <div class="container-xl px-3 px-sm-4 text-center">
       <h1 id="hero-title" class="hero-title">Privacy Policy</h1>
       <p class="hero-meta">
-        Last updated: <time datetime="2026-03-25">March 25, 2026</time>
+        Last updated: <time datetime="2026-03-29">March 29, 2026</time>
       </p>
     </div>
   </section>
@@ -122,7 +122,6 @@
                 <div class="p-content">
                   <div class="p-header">
                     <h3 class="p-name">Network Access (Internet)</h3>
-                    <span class="p-tag p-tag--required">Required</span>
                   </div>
                   <p class="p-desc">Used for two purposes: (1) to download the compressed quote data file from our servers on first launch, enabling fully offline reading thereafter; and (2) to securely transmit encrypted diagnostic data (analytics events and crash reports) to Firebase. No personally identifiable information is included in these transmissions.</p>
                 </div>
@@ -134,13 +133,22 @@
                 <div class="p-content">
                   <div class="p-header">
                     <h3 class="p-name">Post Notifications</h3>
-                    <span class="p-tag p-tag--optional">Optional</span>
                   </div>
                   <p class="p-desc">Used strictly to deliver opt-in daily motivational reminders. Reminders are scheduled entirely on-device at a user-defined time and frequency, and can be disabled at any time in Android Settings or within the app. No notification open rates or interaction data are tracked or transmitted.</p>
                 </div>
               </div>
 
-              <p class="mt-4">No other sensitive permissions are requested. QuoteFlow is engineered to operate with the <strong>minimum necessary level of device access</strong>.</p>
+              <div class="permission-entry">
+                <div class="p-icon" aria-hidden="true">🖼️</div>
+                <div class="p-content">
+                  <div class="p-header">
+                    <h3 class="p-name">Set Wallpaper</h3>
+                  </div>
+                  <p class="p-desc">Used to apply a selected quote image to your device's lock screen, home screen, or both, when you explicitly tap the "Set as Wallpaper" button. This permission is automatically granted by Android and does not prompt for user approval. The app only writes to your wallpaper when you initiate the action — it never changes your wallpaper in the background or without your direct interaction.</p>
+                </div>
+              </div>
+
+              <p class="mt-4">No sensitive permissions beyond those listed above are requested. QuoteFlow is engineered to operate with the <strong>minimum necessary level of device access</strong>.</p>
             </section>
 
             <section id="third-party" class="policy-section">
